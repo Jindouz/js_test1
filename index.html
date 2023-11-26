@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n1 = 14, n2 = 11115, n3 = 114, n4 = 255;
+        let temp = 0;
+        if (n1 > n2 && n1 > n3 && n1 > n4) {
+            temp = n1;
+        }
+        else {
+            if (n2 > n3 && n2 > n4) {
+                temp = n2;
+            }
+            else {
+                if (n3 > n4) {
+                    temp = n3;
+                }
+                else {
+                    temp = n4;
+                }
+            }
+        }
+
+        console.log(`Long way: the biggest number is ${temp}`);
+
+    </script>
+
+    <script>
+        // find the biggest number
+        let b1 = 14, b2 = 11115, b3 = 114, b4 = 255;
+        let temp2 = b1 > b2 ? b1 : b2;
+        temp2 = temp2 > b3 ? temp2 : b3;
+        temp2 = temp2 > b4 ? temp2 : b4;
+        console.log(`Short way: the biggest number is ${temp2}`);
+    </script>
+
+
+
+
+</body>
+
+</html>

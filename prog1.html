@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="printMyName()">Name</button>
+
+    <button onclick="printMyName10()">Name x10</button>
+
+    
+
+    <br><br>
+
+    <input type="text" id="myInput" placeholder="Enter text" onkeydown="checkEnter(event)">
+    <button onclick="logInputValue()">Log Input Value</button>
+
+    <br>
+    <button onclick="displayCurrentDate()">Show Current Date</button>
+
+    <script>
+      // JavaScript function to display current date
+      function displayCurrentDate() {
+        var currentDate = new Date();
+        alert('Current Date: ' + currentDate.toDateString());
+      }
+    </script>
+
+
+    <script>
+
+        function printMyName() { //name
+            console.log("Maor");
+        }
+    </script>
+
+    <script>
+        function printMyName10() { //name x10
+            i = 0
+            while (i < 10) {
+                console.log("Maor");
+                i++
+            }
+
+        }
+
+    </script>
+
+    <script>
+        // chatbox function
+        function logInputValue() {
+            let inputValue = document.getElementById('myInput').value;
+            console.log('Input value:', inputValue);
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                logInputValue();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
